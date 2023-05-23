@@ -1,0 +1,25 @@
+.Seleccion{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.Seleccion>h1{
+    text-align: center;
+    color: blueviolet;
+}
+
+.Seleccion>table{
+    width: 100%;
+    border-spacing: 10px;
+}
+
+td{
+    text-align: center;
+}
+
+thead{
+    background-color: blueviolet;
+    color: white;
+    font-size: large;
+}
+

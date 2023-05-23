@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { HeaderComponent } from './header/header.component';
+import { CalendarioComponent } from './calendario/calendario.component';
+import { SeleccionComponent } from './seleccion/seleccion.component';
+import { AsistenciaComponent } from './asistencia/asistencia.component';
+import { LiquidacionComponent } from './liquidacion/liquidacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     PrincipalComponent,
-    HeaderComponent
+    HeaderComponent,
+    CalendarioComponent,
+    SeleccionComponent,
+    AsistenciaComponent,
+    LiquidacionComponent
   ],
   imports: [
     BrowserModule,
