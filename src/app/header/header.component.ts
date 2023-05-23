@@ -38,12 +38,12 @@ export class HeaderComponent implements OnInit {
 
   GenerarLinkLiquidacion(fecha1: string, fecha2: string[]){
     for(let i = 0; i < fecha2.length; i++){
-      if(fecha1!=fecha2[i]){
-        return '/liquidacion'
+      if(fecha1==fecha2[i]){
+        return '/deshabilitado'
           break;
       }
     }
-    return '/deshabilitado'
+    return '/liquidacion'
   }
 
   ngOnInit(): void {
