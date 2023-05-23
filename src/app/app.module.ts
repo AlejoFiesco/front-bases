@@ -12,6 +12,7 @@ import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { LiquidacionComponent } from './liquidacion/liquidacion.component';
 import { ViaticosComponent } from './viaticos/viaticos.component';
 import { ElectivasComponent } from './electivas/electivas.component';
+import { DeshabilitadoComponent } from './deshabilitado/deshabilitado.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ElectivasComponent } from './electivas/electivas.component';
     AsistenciaComponent,
     LiquidacionComponent,
     ViaticosComponent,
-    ElectivasComponent
+    ElectivasComponent,
+    DeshabilitadoComponent
   ],
   imports: [
     BrowserModule,

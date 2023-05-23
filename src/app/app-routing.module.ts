@@ -6,6 +6,7 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { LiquidacionComponent } from './liquidacion/liquidacion.component';
+import { DeshabilitadoComponent } from './deshabilitado/deshabilitado.component';
 
 const routes: Routes = [
   {path: '', component: PrincipalComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'calendario', component: CalendarioComponent},
   {path: 'seleccion', component: SeleccionComponent},
   {path: 'asistencia', component: AsistenciaComponent},
-  {path: 'liquidacion', component: LiquidacionComponent}
+  {path: 'liquidacion', component: LiquidacionComponent},
+  {path: 'deshabilitado', component: DeshabilitadoComponent}
 ];
 
 @NgModule({

@@ -1,7 +1,14 @@
 <app-header />
 <div class="Liquidacion">
     <div class="Botones">
-        <app-viaticos class="Apps"/>
-        <app-electivas class="Apps"/>
+        <button (click)="show = true">Viaticos</button>
+        <button (click)="show = false">Electivas</button>
     </div>
+    <div *ngIf="show; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+        <app-viaticos />
+    </ng-template>
+    <ng-template #elseBlock>
+        <app-electivas />
+    </ng-template>
 </div>
