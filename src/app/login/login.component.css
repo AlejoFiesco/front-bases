@@ -1,0 +1,69 @@
+.Login{
+    width: 100%;
+    align-items: center;
+    
+}
+
+.Formulario-Login{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+}
+
+.Form-Input{
+    margin: auto;
+    display: block;
+    margin-bottom: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    border: 0;
+    outline: 1px solid blueviolet;
+}
+
+.Form-Label{
+    transition: all .5s;
+    position: absolute;
+    top: 25px;
+    left: 5rem;
+    background-color: white;
+    padding: 0 .5rem;
+    color: rgba(137, 43, 226, 0.5);
+}
+
+.Contenido{
+    position: relative;
+    padding: 1rem;
+}
+
+.Form-Input:focus+.Form-Label{
+    transform: translateY(-1.2rem);
+    font-size: 13px;
+    color: blueviolet;
+}
+
+.Form-Input:not(:placeholder-shown)+.Form-Label{
+    transform: translateY(-1.2rem);
+    transition: .5s;
+    font-size: 13px;
+}
+
+.Formulario{
+    width: 50%;
+    margin: 30vh auto;
+    border: 5px solid blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Boton{
+    display: flex;
+    margin: 0 auto;
+    color: white;
+    background-color: blueviolet;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
