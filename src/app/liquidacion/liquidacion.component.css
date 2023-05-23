@@ -1,0 +1,13 @@
+.Botones{
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.Botones>.Apps{
+    width: 35%;
+    height: 50px;
+    border: 3px solid blueviolet;
+    margin: 10px auto;
+}

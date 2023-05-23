@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./liquidacion.component.css']
 })
 export class LiquidacionComponent {
-
+  show = true;
 }

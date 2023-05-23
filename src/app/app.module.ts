@@ -10,6 +10,8 @@ import { CalendarioComponent } from './calendario/calendario.component';
 import { SeleccionComponent } from './seleccion/seleccion.component';
 import { AsistenciaComponent } from './asistencia/asistencia.component';
 import { LiquidacionComponent } from './liquidacion/liquidacion.component';
+import { ViaticosComponent } from './viaticos/viaticos.component';
+import { ElectivasComponent } from './electivas/electivas.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LiquidacionComponent } from './liquidacion/liquidacion.component';
     CalendarioComponent,
     SeleccionComponent,
     AsistenciaComponent,
-    LiquidacionComponent
+    LiquidacionComponent,
+    ViaticosComponent,
+    ElectivasComponent
   ],
   imports: [
     BrowserModule,
