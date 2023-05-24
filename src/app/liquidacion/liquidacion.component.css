@@ -1,13 +1,10 @@
 .Botones{
     display: flex;
-    flex-direction: row;
     margin: 30px auto;
     width: 80%;
+    justify-content: space-around;
 }
 
 .Botones>button{
     width: 35%;
-    height: 50px;
-    border: 3px solid blueviolet;
-    margin: 10px auto;
 }

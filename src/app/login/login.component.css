@@ -1,69 +1,80 @@
-.Login{
+.Login {
     width: 100%;
     align-items: center;
-    
+
 }
 
-.Formulario-Login{
+.Formulario-Login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin: auto;
-    width: 60%;
+    width: 80%;
     height: 100%;
+    text-align: center;
 }
 
-.Form-Input{
-    margin: auto;
+.Contenido {
+    position: relative;
+}
+
+.Form-Input {
+    width: 100%;
     display: block;
     margin-bottom: 1rem;
     padding: .5rem 2rem;
     border-radius: 5px;
-    border: 0;
-    outline: 1px solid blueviolet;
+    border: none;
+    outline: 1px solid var(--color-principal);
+    font-family: inherit;
+    box-sizing: border-box;
 }
 
-.Form-Label{
-    transition: all .5s;
+.Form-Label {
+    transition: all .2s;
     position: absolute;
-    top: 25px;
-    left: 5rem;
-    background-color: white;
+    top: 5px;
+    bottom: 20px;
+    left: 1rem;
     padding: 0 .5rem;
-    color: rgba(137, 43, 226, 0.5);
+    background-color: white;
+    color: var(--color-principal);
+    font-family: inherit;
+    cursor: text;
 }
 
-.Contenido{
-    position: relative;
-    padding: 1rem;
-}
 
-.Form-Input:focus+.Form-Label{
+.Form-Input:focus+.Form-Label {
     transform: translateY(-1.2rem);
     font-size: 13px;
-    color: blueviolet;
+    color: var(--color-principal);
 }
 
-.Form-Input:not(:placeholder-shown)+.Form-Label{
+.Form-Input:not(:placeholder-shown)+.Form-Label {
     transform: translateY(-1.2rem);
-    transition: .5s;
+    transition: .2s;
     font-size: 13px;
 }
 
-.Formulario{
+.Formulario {
     width: 50%;
     margin: 30vh auto;
-    border: 5px solid blueviolet;
+    box-shadow: 0px 0px 15px 2px var(--color-principal);
     padding: 10px;
     border-radius: 10px;
 }
 
-.Boton{
-    display: flex;
+.Boton {
+    display: grid;
     margin: 0 auto;
     color: white;
-    background-color: blueviolet;
+    background-color: var(--color-principal);
     width: 50%;
     height: 30px;
     border: none;
     border-radius: 8px;
-    align-items: center;
-    justify-content: center;
+    place-content: center;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: var(--font-size-normal);
 }

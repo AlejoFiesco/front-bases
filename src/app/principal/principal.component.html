@@ -1,1 +1,8 @@
-Principal
+<form #form="ngForm" class="single-element" (submit)="onSubmit(form)">
+  <div class="form-group">
+    <h3>Elija la hora para simular</h3>
+    <input type="datetime-local" name="currentMoment" id="currentMoment" ngModel required="true">
+    <span class="error" *ngIf="error">Se debe ingresar una fecha y hora válida</span>
+    <button class="main-button">Establecer fecha</button>
+  </div>
+</form>

@@ -1,12 +1,14 @@
 <div class="Login">
-    <form class="Formulario">
+    <form #form="ngForm" (ngSubmit)="handleSubmit(form)" class="Formulario">
         <div class="Formulario-Login">
+            <h2>Ingresar</h2>
+            <br>
             <div class="Contenido">
-                <input type="email" id="email" class="Form-Input" placeholder=" ">
+                <input type="email" id="email" class="Form-Input" placeholder=" " name="email" ngModel required>
                 <label for="email" class="Form-Label">Correo</label>
             </div>
             <div class="Contenido">
-                <input type="password" id="password" class="Form-Input" placeholder=" ">
+                <input type="password" id="password" class="Form-Input" placeholder=" " name="password" ngModel required autocomplete="true">
                 <label for="password" class="Form-Label">Contraseña</label>
             </div>
             <button type="submit" class="Boton">Ingresar</button>

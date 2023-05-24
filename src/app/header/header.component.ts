@@ -13,10 +13,7 @@ export class HeaderComponent implements OnInit {
   link_Liquidacion!: String;
 
   GenerarLinkCalendario(actividad: boolean){
-    if(actividad){
-      return '/deshabilitado'
-    }
-    return '/calendario'
+    return actividad ? '/deshabilitado' : '/calendario';
   }
 
   GenerarLinkSeleccion(periodo: boolean){
@@ -27,13 +24,7 @@ export class HeaderComponent implements OnInit {
   }
 
   GenerarLinkAsistencia(fecha1: string, fecha2: string[]){
-    for(let i = 0; i < fecha2.length; i++){
-      if(fecha1==fecha2[i]){
-        return '/asistencia'
-          break;
-      }
-    }
-    return '/deshabilitado'
+    return fecha2.includes(fecha1) ? '/asistencia' : '/deshabilitado';
   }
 
   GenerarLinkLiquidacion(fecha1: string, fecha2: string[]){
@@ -50,7 +41,7 @@ export class HeaderComponent implements OnInit {
     const actividad=false;
     const periodo=false;
     const fecha1='10/11/2023';
-    const fecha2 = ['10/05/2021', '11/05/2021', '12/05/2021', '10/11/2023'];
+    const fecha2 = ['10/05/2021', '11/05/2021', '12/05/2021'];
     this.link_Actividad=this.GenerarLinkCalendario(actividad);
     this.link_Seleccion=this.GenerarLinkSeleccion(periodo);
     this.link_Asistencia=this.GenerarLinkAsistencia(fecha1, fecha2);

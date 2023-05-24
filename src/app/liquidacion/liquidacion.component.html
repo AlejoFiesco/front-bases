@@ -1,8 +1,8 @@
 <app-header />
 <div class="Liquidacion">
     <div class="Botones">
-        <button (click)="show = true">Viaticos</button>
-        <button (click)="show = false">Electivas</button>
+        <button class="main-button" (click)="show = true">Viaticos</button>
+        <button class="main-button" (click)="show = false">Electivas</button>
     </div>
     <div *ngIf="show; then thenBlock else elseBlock"></div>
     <ng-template #thenBlock>
