@@ -12,31 +12,15 @@ export class HeaderComponent implements OnInit {
   link_Asistencia!: String;
   link_Liquidacion!: String;
 
-  GenerarLinkCalendario(actividad: boolean){
-    return actividad ? '/deshabilitado' : '/calendario';
-  }
-
-  GenerarLinkSeleccion(periodo: boolean){
-    return periodo ? '/deshabilitado' : '/seleccion';
-  }
-
-  GenerarLinkAsistencia(fecha1: string, fecha2: string[]){
-    return fecha2.includes(fecha1) ? '/asistencia' : '/deshabilitado';
-  }
-  
-  GenerarLinkLiquidacion(fecha1: string, fecha2: string[]){
-    return fecha2.includes(fecha1) ? '/deshabilitado' : '/liquidacion';
-  }
-
   ngOnInit(): void {
-    const actividad=false;
-    const periodo=false;
-    const fecha1='10/11/2023';
+    const actividad = false;
+    const periodo = false;
+    const fecha1 = '10/11/2023';
     const fecha2 = ['10/05/2021', '11/05/2021', '12/05/2021'];
-    this.link_Actividad=this.GenerarLinkCalendario(actividad);
-    this.link_Seleccion=this.GenerarLinkSeleccion(periodo);
-    this.link_Asistencia=this.GenerarLinkAsistencia(fecha1, fecha2);
-    this.link_Liquidacion=this.GenerarLinkLiquidacion(fecha1, fecha2);
+    this.link_Actividad = actividad ? '/deshabilitado' : '/calendario';
+    this.link_Seleccion = periodo ? '/deshabilitado' : '/seleccion';
+    this.link_Asistencia = fecha2.includes(fecha1) ? '/asistencia' : '/deshabilitado';
+    this.link_Liquidacion = fecha2.includes(fecha1) ? '/deshabilitado' : '/liquidacion';
   }
 
 }
