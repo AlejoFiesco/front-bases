@@ -17,24 +17,15 @@ export class HeaderComponent implements OnInit {
   }
 
   GenerarLinkSeleccion(periodo: boolean){
-    if(periodo){
-      return '/deshabilitado'
-    }
-    return '/seleccion'
+    return periodo ? '/deshabilitado' : '/seleccion';
   }
 
   GenerarLinkAsistencia(fecha1: string, fecha2: string[]){
     return fecha2.includes(fecha1) ? '/asistencia' : '/deshabilitado';
   }
-
+  
   GenerarLinkLiquidacion(fecha1: string, fecha2: string[]){
-    for(let i = 0; i < fecha2.length; i++){
-      if(fecha1==fecha2[i]){
-        return '/deshabilitado'
-          break;
-      }
-    }
-    return '/liquidacion'
+    return fecha2.includes(fecha1) ? '/deshabilitado' : '/liquidacion';
   }
 
   ngOnInit(): void {
