@@ -19,10 +19,11 @@ export class PrincipalComponent {
 
   onSubmit(form: NgForm) {
     if (form.valid) {
-      console.log(form.value);
+      const tempDate = form.value.currentMoment.toString();
       form.resetForm();
       this.error = false;
       this.router.navigate(['/login']);
+      localStorage.setItem('date', tempDate);
     } else {
       this.error = true;
     }

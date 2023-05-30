@@ -1,0 +1,9 @@
+.datos-usuario{
+  width: 80%;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 30px;
+  place-content: center;
+  text-align: center;
+}

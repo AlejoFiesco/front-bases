@@ -17,6 +17,8 @@ export interface ListaEstudiantes {
 
 export class SeleccionComponent {
 
+  mostrando = false;
+
   Estudiantes: ListaEstudiantes[] = [
     {codigo: 1, nombre: 'Jose', apellido: 'Perez', facultad: 'Ingenieria', proyecto: 'Electrica', instrumento: 'Guitarra'},
     {codigo: 2, nombre: 'Jose', apellido: 'Perez', facultad: 'Ingenieria', proyecto: 'Electrica', instrumento: 'Guitarra'},

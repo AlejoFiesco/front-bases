@@ -1,26 +1,30 @@
 <app-header />
+<app-datos-usuario/>
 <div class="main-table">
-    <h1>Lista de estudiantes</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Codigo</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Facultad</th>
-                <th>Proyecto</th>
-                <th>Instrumento</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let estudiante of Estudiantes">
-                <td> {{ estudiante.codigo}} </td>
-                <td> {{ estudiante.nombre}} </td>
-                <td> {{ estudiante.apellido}} </td>
-                <td> {{ estudiante.facultad}} </td>
-                <td> {{ estudiante.proyecto}} </td>
-                <td> {{ estudiante.instrumento}} </td>
-            </tr>
-        </tbody>
-    </table>
+    <button (click)="mostrando = !mostrando" class="main-button">Seleccionar</button>
+    <div class="tabla" *ngIf="mostrando">
+        <h1>Lista de estudiantes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Facultad</th>
+                    <th>Proyecto</th>
+                    <th>Instrumento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let estudiante of Estudiantes">
+                    <td> {{ estudiante.codigo}} </td>
+                    <td> {{ estudiante.nombre}} </td>
+                    <td> {{ estudiante.apellido}} </td>
+                    <td> {{ estudiante.facultad}} </td>
+                    <td> {{ estudiante.proyecto}} </td>
+                    <td> {{ estudiante.instrumento}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

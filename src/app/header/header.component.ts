@@ -22,5 +22,4 @@ export class HeaderComponent implements OnInit {
     this.link_Asistencia = fecha2.includes(fecha1) ? '/asistencia' : '/deshabilitado';
     this.link_Liquidacion = fecha2.includes(fecha1) ? '/deshabilitado' : '/liquidacion';
   }
-
 }

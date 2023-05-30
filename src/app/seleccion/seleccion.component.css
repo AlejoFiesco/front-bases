@@ -1,2 +1,17 @@
 
+.tabla{
+  width: 100%;
+}
 
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  height: 30px;
+}
+
+table tr :first-child{
+  border-right: 2px solid var(--color-principal);
+}
